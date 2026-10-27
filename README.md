@@ -24,12 +24,11 @@ brew "bible-tui"
 cask "codys-dev-tools"
 ```
 
-Cody's Dev Tools isn't signed with an Apple Developer ID, so the cask clears the macOS quarantine flag after installing; otherwise Gatekeeper would refuse to open it.
-
 ## Updates
 
 The `brew bump` workflow checks for new releases every day and opens a pull request that updates the formula or cask.
 `brew upgrade` picks up the new version once that pull request is merged.
+Cody's Dev Tools updates itself, so its cask is marked `auto_updates true`: `brew upgrade` skips it unless you pass `--greedy`, and the app's built-in updater handles new versions instead.
 
 ## Documentation
 

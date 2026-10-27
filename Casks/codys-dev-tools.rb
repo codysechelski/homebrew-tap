@@ -1,6 +1,6 @@
 cask "codys-dev-tools" do
-  version "0.42.0"
-  sha256 "46d32f3220bb93c81f76685a7ca0cd5af9ea03381ed59e8137daffa0d9ffbd7b"
+  version "0.43.0"
+  sha256 "158c42d55ebae2bd6ac28dc5facc67621433ae140a78054b4864a3961ee1dc1e"
 
   url "https://github.com/codysechelski/codys-dev-tools-two/releases/download/v#{version}/codys-dev-tools-#{version}-universal.dmg"
   name "Cody's Dev Tools"
@@ -12,16 +12,10 @@ cask "codys-dev-tools" do
     strategy :github_latest
   end
 
+  auto_updates true
   depends_on macos: :monterey
 
   app "Cody's Dev Tools.app"
-
-  # The app isn't signed with an Apple Developer ID, so Gatekeeper would refuse to open a
-  # quarantined copy ("is damaged and can't be opened").
-  postflight_steps do
-    run "/usr/bin/xattr",
-        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Cody's Dev Tools.app"]
-  end
 
   zap trash: [
     "~/Library/Application Support/Cody's Dev Tools",
