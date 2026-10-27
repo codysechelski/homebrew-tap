@@ -1,17 +1,30 @@
-# Codysechelski Tap
+# codysechelski/tap
 
-## How do I install these formulae?
+Homebrew formulae for Cody Sechelski's projects.
 
-`brew install codysechelski/tap/<formula>`
+| Formula | Description |
+| --- | --- |
+| [bible-tui](https://github.com/codysechelski/bible-tui) | A terminal Bible reader with Vim-style keys |
 
-Or `brew tap codysechelski/tap` and then `brew install <formula>`.
+## Install
 
-Or, in a `brew bundle` `Brewfile`:
+```sh
+brew install codysechelski/tap/bible-tui
+```
+
+Or `brew tap codysechelski/tap` and then `brew install bible-tui`.
+
+In a `Brewfile`:
 
 ```ruby
 tap "codysechelski/tap"
-brew "<formula>"
+brew "bible-tui"
 ```
+
+## Updates
+
+The `brew bump` workflow checks for new releases every day and opens a pull request that updates the formula.
+`brew upgrade` picks up the new version once that pull request is merged.
 
 ## Documentation
 
