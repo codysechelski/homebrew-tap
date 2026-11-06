@@ -3,8 +3,8 @@ class BibleTui < Formula
 
   desc "Terminal Bible reader with Vim-style keys"
   homepage "https://github.com/codysechelski/bible-tui"
-  url "https://files.pythonhosted.org/packages/eb/35/9f723bd70994a125d33adbf0a558302d1e616cfe32c453e8a60bfbb8dbcf/bible_tui-0.9.1.tar.gz"
-  sha256 "6454dff5a0309a7d1b8374400498ec8617dfb337abe0159cb69d5b6610b71dd0"
+  url "https://files.pythonhosted.org/packages/f7/44/4640e5b7be9973e3e015dace9fe5eb99a6aa08b547ee06af3f9fd2342b88/bible_tui-0.9.2.tar.gz"
+  sha256 "4960a4acfb3ff409b8b54b230c4d49017abd499bdf3a26f921498f129b1e6db1"
   license "MIT"
 
   depends_on "python@3.15"
