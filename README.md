@@ -26,8 +26,8 @@ cask "codys-dev-tools"
 
 ## Updates
 
-The `brew bump` workflow checks for new releases every day and opens a pull request that updates the formula or cask.
-`brew upgrade` picks up the new version once that pull request is merged.
+Each project's release workflow commits its new version here as soon as the release is published, so `brew upgrade` picks it up right away.
+The daily `brew bump` workflow is a fallback: it opens a pull request when it finds a release that isn't here yet.
 Cody's Dev Tools updates itself, so its cask is marked `auto_updates true`: `brew upgrade` skips it unless you pass `--greedy`, and the app's built-in updater handles new versions instead.
 
 ## Documentation
