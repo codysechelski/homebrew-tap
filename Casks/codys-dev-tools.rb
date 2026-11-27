@@ -1,6 +1,6 @@
 cask "codys-dev-tools" do
-  version "0.47.0"
-  sha256 "66cc771350dced3a8345d9037e963693227f30d1e242b3d83f7181ddb66c22a4"
+  version "0.47.1"
+  sha256 "d8f75c634a57b2ab8c6a4f89a667175392a206a94db5594ba47a73b6faa8f6d1"
 
   url "https://github.com/codysechelski/codys-dev-tools-two/releases/download/v#{version}/codys-dev-tools-#{version}-universal.dmg"
   name "Cody's Dev Tools"
